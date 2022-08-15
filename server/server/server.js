@@ -4,7 +4,6 @@ const api = require('./api/api');
 
 require("./middleware/appMiddleware")(app);
 
-
-app.use("/api/", api);
+app.use("/api", api);
 
 module.exports = app;
